@@ -45,7 +45,7 @@ bc-gestao-contabil/
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/SEU-USUARIO/bc-gestao-contabil.git
+   git clone https://github.com/omarceloandradee/bc-gestao-contabil.git
    ```
 
 2. Acesse a pasta do projeto:
