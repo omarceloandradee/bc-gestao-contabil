@@ -5,7 +5,7 @@
   "main": "src/js/app.js",
   "scripts": {
     "dev": "npx serve .",
-    "build": "echo 'no-build'",
+    "build": "mkdir -p dist && cp -r src public index.html dist",
     "lint": "eslint src/js/**/*.js",
     "format": "prettier --write \"src/**/*.{js,css,html}\""
   },
