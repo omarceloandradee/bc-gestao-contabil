@@ -1,0 +1,37 @@
+.benefits-section { padding: var(--section-pad); background: var(--bg-darker); }
+
+.side-glow {
+  position: absolute; width: 600px; height: 600px; top: 20%;
+  background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 60%);
+  filter: blur(60px); z-index: -1;
+}
+.position-left { left: -200px; }
+.position-right { right: -200px; top: 10%; }
+
+.benefits-container {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start;
+}
+
+.sticky-wrapper { position: sticky; top: 120px; padding-bottom: 40px; }
+.benefits-intro { font-size: 1.15rem; margin-bottom: 40px; }
+
+.benefits-right { display: flex; flex-direction: column; gap: 24px; }
+
+.glass-row {
+  display: flex; align-items: flex-start; gap: 24px;
+  padding: 30px; border-radius: 20px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.4s var(--ease-out);
+}
+
+.glass-row:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(212,175,55,0.2);
+  transform: translateX(10px);
+}
+
+.benefit-icon-wrap { width: 44px; height: 44px; flex-shrink: 0; }
+.benefit-content h4 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 8px; color: var(--white); }
+.benefit-content p { color: var(--white-60); font-size: 0.95rem; }

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BC Gestão Contábil — Contabilidade estratégica para empresas e pessoas físicas. Abertura de empresa, departamento fiscal, pessoal, contábil e imposto de renda." />
+  <title>BC Gestão Contábil | Contabilidade Estratégica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/main.css" />
+</head>
+<body>
+
+
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo hover-expand">
+        <img src="public/img/logo1.png" class="logo-img" alt="BC Gestão Contábil" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link hover-expand">Início</a></li>
+        <li><a href="#servicos" class="nav-link hover-expand">Serviços</a></li>
+        <li><a href="#beneficios" class="nav-link hover-expand">Benefícios</a></li>
+        <li><a href="#depoimentos" class="nav-link hover-expand">Depoimentos</a></li>
+        <li><a href="#sobre" class="nav-link hover-expand">Sobre</a></li>
+        <li><a href="#contato" class="nav-link hover-expand">Contato</a></li>
+      </ul>
+
+      <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-whatsapp-nav hover-expand" aria-label="Falar no WhatsApp">
+        <span class="btn-shine"></span>
+        <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.648 4.83 1.782 6.862L2 30l7.338-1.754A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.89-1.604l-.422-.252-4.352 1.04 1.068-4.24-.278-.436A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.64c-.348-.174-2.058-1.014-2.378-1.13-.318-.116-.55-.174-.78.174-.232.348-.898 1.13-1.1 1.362-.202.232-.404.26-.752.086-.348-.174-1.47-.542-2.8-1.726-1.034-.922-1.732-2.06-1.934-2.408-.202-.348-.022-.536.152-.708.156-.156.348-.406.522-.608.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.088-.174-.78-1.882-1.07-2.578-.282-.678-.568-.586-.78-.598l-.664-.012a1.27 1.27 0 0 0-.92.434c-.318.348-1.21 1.182-1.21 2.882s1.238 3.344 1.41 3.576c.172.232 2.436 3.72 5.902 5.214.824.356 1.468.568 1.97.728.828.264 1.582.226 2.178.138.664-.1 2.058-.842 2.348-1.656.29-.812.29-1.508.202-1.656-.086-.146-.318-.232-.666-.406z"/></svg>
+        Falar no WhatsApp
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== 1. HERO / HEADLINE ======================== -->
+  <section class="hero" id="inicio">
+    <canvas id="particles-canvas" class="hero-canvas"></canvas>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <div class="hero-badge reveal-elem reveal-scale">
+        <span class="badge-dot"></span>
+        Contabilidade Estratégica
+      </div>
+      <h1 class="hero-headline type-reveal">
+        Sua empresa em dia.<br />
+        <span class="gold-gradient">Seu crescimento,</span><br />
+        nossa prioridade.
+      </h1>
+      <p class="hero-subheadline reveal-elem reveal-fade delay-2">
+        Abertura de empresa, departamento fiscal, pessoal e contábil, regularização e imposto de renda — tudo com atendimento próximo, responsável e eficiente.
+      </p>
+      <div class="hero-actions reveal-elem reveal-fade delay-3">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-primary ripple hover-expand">
+          <span class="btn-shine"></span>
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" style="animation: pulse 2s infinite;">
+            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.648 4.83 1.782 6.862L2 30l7.338-1.754A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.89-1.604l-.422-.252-4.352 1.04 1.068-4.24-.278-.436A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.64c-.348-.174-2.058-1.014-2.378-1.13-.318-.116-.55-.174-.78.174-.232.348-.898 1.13-1.1 1.362-.202.232-.404.26-.752.086-.348-.174-1.47-.542-2.8-1.726-1.034-.922-1.732-2.06-1.934-2.408-.202-.348-.022-.536.152-.708.156-.156.348-.406.522-.608.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.088-.174-.78-1.882-1.07-2.578-.282-.678-.568-.586-.78-.598l-.664-.012a1.27 1.27 0 0 0-.92.434c-.318.348-1.21 1.182-1.21 2.882s1.238 3.344 1.41 3.576c.172.232 2.436 3.72 5.902 5.214.824.356 1.468.568 1.97.728.828.264 1.582.226 2.178.138.664-.1 2.058-.842 2.348-1.656.29-.812.29-1.508.202-1.656-.086-.146-.318-.232-.666-.406z"/>
+          </svg>
+          Falar com especialista
+        </a>
+        <a href="#servicos" class="btn-secondary hover-expand">
+          Conheça nossos serviços
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats glass-panel reveal-elem reveal-up delay-4 hover-expand-subtle">
+        <div class="stat">
+          <span class="stat-num counter">+200</span>
+          <span class="stat-label">Empresas atendidas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num counter">10+</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num counter">100%</span>
+          <span class="stat-label">Comprometimento</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Role para baixo</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======================== 2. VISUAL FOCUS / SERVIÇOS ======================== -->
+  <section class="services-section relative-section" id="servicos">
+    <div class="bg-grid-texture"></div>
+    <div class="services-container">
+      <div class="section-header reveal-elem reveal-up section-centered">
+        <span class="section-tag glow-tag">O que fazemos</span>
+        <h2 class="section-title">Serviços que <span class="gold-gradient">transformam</span><br />a gestão do seu negócio</h2>
+        <p class="section-desc">Soluções contábeis completas para empresas de todos os portes e para pessoas físicas que buscam organização e segurança.</p>
+      </div>
+
+      <div class="services-masonry">
+        <!-- Card 1 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-1 hover-expand-subtle">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M20 10a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 12c5.523 0 10 2.239 10 5v1H10v-1c0-2.761 4.477-5 10-5z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Departamento Pessoal</h3>
+          <p class="service-desc">Folha de pagamento, admissões, demissões, férias e obrigações trabalhistas com total conformidade legal.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-2 hover-expand-subtle card-featured">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13 12h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H13a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1zm2 4v2h10v-2H15zm0 4v2h10v-2H15zm0 4v2h6v-2h-6z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Departamento Fiscal</h3>
+          <p class="service-desc">Apuração de impostos, emissão de notas, obrigações acessórias e planejamento tributário eficiente.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-3 hover-expand-subtle">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+               <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 14h28M6 26h28M14 6v28M26 6v28"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Departamento Contábil</h3>
+          <p class="service-desc">Escrituração contábil, balanços, DRE e relatórios que dão clareza real para as decisões do seu negócio.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-1 hover-expand-subtle">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+             <svg viewBox="0 0 40 40" fill="none">
+               <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M10 20l6 6 14-14"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Abertura e Fechamento</h3>
+          <p class="service-desc">Constituição, alterações e encerramento societário com agilidade e segurança em todas as etapas.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-2 hover-expand-subtle">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+               <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M20 11a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm-1 13.17l-4.24-4.24 1.41-1.41L19 21.34l6.83-6.83 1.41 1.41L19 24.17z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Regularização de Empresas</h3>
+          <p class="service-desc">Resolução de pendências fiscais e cadastrais, restabelecimento de CNPJ e saneamento de débitos com órgãos públicos.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card glass-card tilt-elem reveal-elem reveal-up delay-3 hover-expand-subtle">
+          <div class="card-glow-border"></div>
+          <div class="service-icon animated-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+               <path class="svg-stroke" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M22 12h-4v2h-4v2h-2v4h2v2h4v2h4v-2h4v-2h2v-4h-2v-2h-4v-2zm-2 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Imposto de Renda</h3>
+          <p class="service-desc">Declaração do IRPF com análise criteriosa, aproveitamento de deduções e total tranquilidade para você.</p>
+        </div>
+        
+        <!-- Global Defs para os SVGs via JS/CSS -->
+        <svg style="width:0;height:0;position:absolute;">
+            <defs>
+               <linearGradient id="goldGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                   <stop stop-color="#CA9C46"/>
+                   <stop offset="1" stop-color="#FCE196"/>
+               </linearGradient>
+            </defs>
+        </svg>
+      </div>
+
+      <div class="services-cta reveal-elem reveal-up">
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-primary ripple hover-expand">Solicitar atendimento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 3. BENEFITS ======================== -->
+  <section class="benefits-section relative-section" id="beneficios">
+    <div class="side-glow position-left"></div>
+    <div class="benefits-container">
+      <div class="benefits-left reveal-elem reveal-left">
+        <div class="sticky-wrapper">
+            <span class="section-tag glow-tag tag-light">Por que a BC?</span>
+            <h2 class="section-title light">Por que escolher a <span class="gold-gradient">BC Gestão Contábil</span></h2>
+            <p class="benefits-intro">Mais do que uma contabilidade, somos parceiros estratégicos do seu negócio. Nossa missão é simplificar o complexo para que você foque no que realmente importa.</p>
+            <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-gold hover-expand">
+                <span class="btn-shine"></span>
+                Começar agora
+            </a>
+        </div>
+      </div>
+      <div class="benefits-right">
+        <!-- Lista de benefícios -->
+        <div class="benefit-item glass-row reveal-elem reveal-right delay-1 hover-expand-subtle">
+          <div class="benefit-icon-wrap draw-checkbox">
+             <canvas width="40" height="40" class="chk-canvas"></canvas>
+          </div>
+          <div class="benefit-content">
+            <h4>Organização fiscal e contábil</h4>
+            <p>Processos bem estruturados que mantêm sua empresa em conformidade com todas as obrigações legais.</p>
+          </div>
+        </div>
+        <div class="benefit-item glass-row reveal-elem reveal-right delay-2 hover-expand-subtle">
+          <div class="benefit-icon-wrap draw-checkbox">
+             <canvas width="40" height="40" class="chk-canvas"></canvas>
+          </div>
+          <div class="benefit-content">
+            <h4>Atendimento ágil e próximo</h4>
+            <p>Respostas rápidas, clareza nas informações e um time que realmente entende a realidade do seu negócio.</p>
+          </div>
+        </div>
+        <div class="benefit-item glass-row reveal-elem reveal-right delay-3 hover-expand-subtle">
+          <div class="benefit-icon-wrap draw-checkbox">
+             <canvas width="40" height="40" class="chk-canvas"></canvas>
+          </div>
+          <div class="benefit-content">
+            <h4>Abertura e regularização segura</h4>
+            <p>Abrimos ou regularizamos sua empresa do zero ao registro final, sem burocracia desnecessária.</p>
+          </div>
+        </div>
+        <div class="benefit-item glass-row reveal-elem reveal-right delay-4 hover-expand-subtle">
+          <div class="benefit-icon-wrap draw-checkbox">
+             <canvas width="40" height="40" class="chk-canvas"></canvas>
+          </div>
+          <div class="benefit-content">
+            <h4>Imposto de Renda sem estresse</h4>
+            <p>Sua declaração feita com cuidado, dentro do prazo e com aproveitamento máximo de deduções legais.</p>
+          </div>
+        </div>
+        <div class="benefit-item glass-row reveal-elem reveal-right delay-5 hover-expand-subtle">
+          <div class="benefit-icon-wrap draw-checkbox">
+             <canvas width="40" height="40" class="chk-canvas"></canvas>
+          </div>
+          <div class="benefit-content">
+            <h4>Segurança nas informações</h4>
+            <p>Seus dados tratados com total sigilo, responsabilidade e respeito à legislação vigente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 4. SOCIAL PROOF ======================== -->
+  <section class="testimonials-section relative-section" id="depoimentos">
+    <div class="bg-waves"></div>
+    <div class="testimonials-container">
+      <div class="section-header reveal-elem reveal-up section-centered">
+        <span class="section-tag glow-tag">Depoimentos</span>
+        <h2 class="section-title">O que nossos clientes <span class="gold-gradient">dizem sobre nós</span></h2>
+      </div>
+
+      <div class="stats-row reveal-elem reveal-up glass-panel hover-expand-subtle">
+        <div class="stat-badge">
+          <span class="stat-big counter">+200</span>
+          <span class="stat-small">Empresas atendidas</span>
+        </div>
+        <div class="stat-divider v-divider"></div>
+        <div class="stat-badge">
+          <span class="stat-big counter">98%</span>
+          <span class="stat-small">Satisfação dos clientes</span>
+        </div>
+        <div class="stat-divider v-divider"></div>
+        <div class="stat-badge">
+          <span class="stat-big counter">10+</span>
+          <span class="stat-small">Anos no mercado</span>
+        </div>
+      </div>
+
+      <!-- Carousel Nativo -->
+      <div class="testimonials-carousel-wrapper reveal-elem reveal-up delay-2">
+         <div class="carousel-track" id="testimonialTrack">
+            <!-- Slides -->
+            <div class="testimonial-slide">
+                <div class="testimonial-card glass-card with-quotes">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Abri minha empresa com a BC e foi um processo muito tranquilo. Eles cuidaram de tudo e me explicaram cada etapa. Me sinto seguro tendo eles do meu lado."</p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar img-placeholder">RM</div>
+                      <div class="author-info">
+                        <strong>Ricardo Moura</strong>
+                        <span>Empresário — Varejo</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-slide">
+                <div class="testimonial-card glass-card with-quotes card-featured">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Minha empresa estava com pendências fiscais há anos. A BC resolveu tudo em poucos meses com muita competência. Recomendo sem hesitar."</p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar img-placeholder">JC</div>
+                      <div class="author-info">
+                        <strong>Juliana Carvalho</strong>
+                        <span>Empresária — Serviços</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card glass-card with-quotes">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Finalmente encontrei uma contabilidade que responde rápido e fala numa linguagem que eu entendo. O atendimento da BC é diferente, muito próximo e humano."</p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar img-placeholder">FO</div>
+                      <div class="author-info">
+                        <strong>Felipe Oliveira</strong>
+                        <span>Médico — Pessoa Física</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-card glass-card with-quotes">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"A declaração do meu Imposto de Renda nunca foi tão simples. Enviaram tudo no prazo, explicaram cada detalhe e ainda me ajudaram a restituir mais do que esperava."</p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar img-placeholder">AM</div>
+                      <div class="author-info">
+                        <strong>Ana Machado</strong>
+                        <span>Professora — Pessoa Física</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         
+         <div class="carousel-controls">
+            <button class="carousel-btn prev-btn hover-expand" aria-label="Anterior" id="prevBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn next-btn hover-expand" aria-label="Próximo" id="nextBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 5. STORYTELLING / SOBRE ======================== -->
+  <section class="story-section relative-section" id="sobre">
+    <div class="story-container">
+      <div class="story-visual reveal-elem reveal-left">
+        <div class="story-visual-inner glass-panel">
+           <div class="flip-clock-container">
+               <div class="flip-clock-number flip-anim" id="expYears">10</div>
+               <div class="flip-clock-label">Anos de atuação contínua</div>
+           </div>
+           
+           <div class="timeline-tree">
+               <div class="timeline-node reveal-elem reveal-up delay-1">
+                   <div class="node-dot glow-dot"></div>
+                   <div class="node-content">
+                       <h5>Fundação</h5>
+                       <p>O início de uma operação focada na proximidade com o cliente.</p>
+                   </div>
+               </div>
+               <div class="timeline-node reveal-elem reveal-up delay-2">
+                   <div class="node-dot glow-dot"></div>
+                   <div class="node-content">
+                       <h5>Crescimento & Tecnologia</h5>
+                       <p>Integração de ferramentas digitais para mais agilidade.</p>
+                   </div>
+               </div>
+               <div class="timeline-node reveal-elem reveal-up delay-3">
+                   <div class="node-dot glow-dot"></div>
+                   <div class="node-content">
+                       <h5>Referência em Gestão</h5>
+                       <p>Reconhecimento como parceiros estratégicos premium.</p>
+                   </div>
+               </div>
+               <div class="timeline-line"></div>
+           </div>
+        </div>
+      </div>
+
+      <div class="story-content reveal-elem reveal-right">
+        <span class="section-tag glow-tag tag-light">Nossa história</span>
+        <h2 class="section-title light">Contabilidade vai <span class="gold-gradient">além dos números</span></h2>
+        <p class="story-text">Na BC Gestão Contábil, acreditamos que contabilidade de verdade é aquela que caminha junto com o empresário — não só quando chega o prazo de obrigação, mas em cada decisão que move o negócio.</p>
+        <p class="story-text">Nossa equipe cuida do seu departamento pessoal, fiscal e contábil com responsabilidade e atenção. Abrimos empresas, regularizamos situações complexas e entregamos o imposto de renda com a seriedade que você merece.</p>
+        <p class="story-text">Mais do que uma contabilidade, somos parceiros estratégicos. Nosso compromisso é oferecer clareza, organização e tranquilidade para que você foque no que realmente importa: crescer.</p>
+
+        <div class="story-tags">
+          <span class="story-tag-item glass-badge">Comprometimento</span>
+          <span class="story-tag-item glass-badge">Transparência</span>
+          <span class="story-tag-item glass-badge">Agilidade</span>
+          <span class="story-tag-item glass-badge">Segurança</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 6. GUARANTEE ======================== -->
+  <section class="guarantee-section relative-section">
+    <div class="side-glow position-right"></div>
+    <div class="guarantee-container">
+      <div class="section-header reveal-elem reveal-up section-centered">
+
+        <span class="section-tag glow-tag">Nossa garantia</span>
+        <h2 class="section-title">Confiança que você pode <span class="gold-gradient">contar todos os dias</span></h2>
+      </div>
+
+      <div class="guarantee-grid">
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-1">
+          <div class="card-glow-border"></div>
+          <h4>Segurança nas informações</h4>
+          <p class="description-hidden">Seus dados e os da sua empresa tratados com total sigilo, responsabilidade e conformidade legal.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-2">
+          <div class="card-glow-border"></div>
+          <h4>Cumprimento de prazos</h4>
+          <p class="description-hidden">Obrigações entregues dentro do prazo, sempre. Sua empresa nunca paga multa por atraso conosco.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-3">
+          <div class="card-glow-border"></div>
+          <h4>Atendimento próximo</h4>
+          <p class="description-hidden">Um time acessível, que responde, explica e acompanha cada etapa sem deixar você esperando.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-1">
+          <div class="card-glow-border"></div>
+          <h4>Processos organizados</h4>
+          <p class="description-hidden">Documentos, relatórios e obrigações gerenciados com método e clareza do início ao fim.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-2">
+          <div class="card-glow-border"></div>
+          <h4>Transparência total</h4>
+          <p class="description-hidden">Sem surpresas, sem linguagem técnica confusa. Você entende tudo o que está acontecendo na sua contabilidade.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+
+        <div class="guarantee-card glass-card hover-expand-subtle reveal-elem reveal-up delay-3">
+          <div class="card-glow-border"></div>
+          <h4>Parceria de longo prazo</h4>
+          <p class="description-hidden">Nosso objetivo é ser seu parceiro contábil por anos — crescendo junto com você e seu negócio.</p>
+          <span class="expand-indicator">+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 7. CTA FINAL ======================== -->
+  <section class="cta-section relative-section" id="contato">
+    <div class="cta-bg-pulses">
+        <div class="pulse-ring pr-1"></div>
+        <div class="pulse-ring pr-2"></div>
+        <div class="pulse-ring pr-3"></div>
+    </div>
+    
+    <div class="cta-container glass-panel reveal-elem reveal-up">
+      <div class="cta-content">
+        <span class="section-tag glow-tag pricy-tag">Pronto para começar?</span>
+        <h2 class="cta-title">Vamos organizar sua <span class="gold-gradient">contabilidade juntos</span></h2>
+        <p class="cta-text">Entre em contato agora e descubra como a BC Gestão Contábil pode transformar a gestão do seu negócio — ou cuidar do seu imposto de renda com a atenção que você merece.</p>
+        
+        <form class="minimal-contact-form" id="contactForm">
+           <div class="input-group">
+               <input type="text" id="userName" placeholder="Seu nome" required />
+           </div>
+           <div class="input-group">
+               <input type="tel" id="userPhone" placeholder="Seu WhatsApp" required />
+           </div>
+           <button type="submit" class="btn-primary btn-large btn-block ripple hover-expand outline-pulse-loop">
+                <span class="btn-shine"></span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.549 4.108 1.51 5.845L.057 23.43a.75.75 0 0 0 .918.918l5.585-1.453A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.696 9.696 0 0 1-4.952-1.354l-.355-.211-3.676.956.977-3.565-.231-.368A9.712 9.712 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Falar pelo WhatsApp agora
+           </button>
+        </form>
+        <p class="cta-note">Atendimento rápido · Sem compromisso · 100% online</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top reveal-elem reveal-up">
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo-link hover-expand">
+            <img src="public/img/logo1.png" class="footer-logo-img" alt="BC Gestão" />
+          </a>
+          <p class="footer-tagline">Contabilidade estratégica com atendimento próximo, responsável e eficiente para empresas e pessoas físicas.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/SEUPERFIL" target="_blank" class="social-btn glass-btn hover-expand" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/SEUNUMERO" target="_blank" class="social-btn glass-btn social-btn-wa hover-expand" aria-label="WhatsApp">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.648 4.83 1.782 6.862L2 30l7.338-1.754A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.89-1.604l-.422-.252-4.352 1.04 1.068-4.24-.278-.436A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.64c-.348-.174-2.058-1.014-2.378-1.13-.318-.116-.55-.174-.78.174-.232.348-.898 1.13-1.1 1.362-.202.232-.404.26-.752.086-.348-.174-1.47-.542-2.8-1.726-1.034-.922-1.732-2.06-1.934-2.408-.202-.348-.022-.536.152-.708.156-.156.348-.406.522-.608.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.088-.174-.78-1.882-1.07-2.578-.282-.678-.568-.586-.78-.598l-.664-.012a1.27 1.27 0 0 0-.92.434c-.318.348-1.21 1.182-1.21 2.882s1.238 3.344 1.41 3.576c.172.232 2.436 3.72 5.902 5.214.824.356 1.468.568 1.97.728.828.264 1.582.226 2.178.138.664-.1 2.058-.842 2.348-1.656.29-.812.29-1.508.202-1.656-.086-.146-.318-.232-.666-.406z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/SEUPERFIL" target="_blank" class="social-btn glass-btn social-btn-li hover-expand" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="#inicio" class="hover-expand">Início</a></li>
+            <li><a href="#servicos" class="hover-expand">Serviços</a></li>
+            <li><a href="#beneficios" class="hover-expand">Benefícios</a></li>
+            <li><a href="#depoimentos" class="hover-expand">Depoimentos</a></li>
+            <li><a href="#sobre" class="hover-expand">Sobre</a></li>
+            <li><a href="#contato" class="hover-expand">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Serviços Especiais</h5>
+          <ul>
+            <li><a href="#servicos" class="hover-expand">Consultoria Contábil</a></li>
+            <li><a href="#servicos" class="hover-expand">Planejamento Tributário</a></li>
+            <li><a href="#servicos" class="hover-expand">Terceirização de Folha</a></li>
+            <li><a href="#servicos" class="hover-expand">Imposto de Renda</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+            <h5>Inscreva-se</h5>
+            <p>Receba dicas fiscais para poupar o dinheiro da sua empresa.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required/>
+                <button type="submit" class="btn-gold hover-expand">→</button>
+            </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 BC Gestão Contábil · Especialistas em simplificar seus resultados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/js/app.js"></script>
+</body>
+</html>

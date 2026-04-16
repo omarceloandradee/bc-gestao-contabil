@@ -1,0 +1,30 @@
+/* ============================================================
+   BC Gestão Contábil — Main Stylesheet
+   ============================================================ */
+
+/* Base */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* Animations */
+@import url('./animations.css');
+
+/* Components */
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+@import url('./components/carousel.css');
+
+/* Sections */
+@import url('./sections/hero.css');
+@import url('./sections/services.css');
+@import url('./sections/benefits.css');
+@import url('./sections/testimonials.css');
+@import url('./sections/story.css');
+@import url('./sections/guarantee.css');
+@import url('./sections/cta.css');
+
+/* Responsive */
+@import url('./responsive.css');

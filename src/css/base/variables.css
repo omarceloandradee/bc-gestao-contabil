@@ -1,0 +1,46 @@
+/* ---- CSS VARIABLES & TOKENS ---- */
+:root {
+  /* Premium Palette */
+  --bg-dark: #070B1A;
+  --bg-darker: #04060E;
+  --navy-dark: #0A1128;
+  --navy-mid:  #14224A;
+  --navy-light: #1E336D;
+
+  /* Gold Destaques */
+  --gold-1: #946B2D;
+  --gold-2: #B8860B; /* Dark Goldenrod */
+  --gold-3: #D4AF37; /* Metallic Gold */
+  --gold-4: #FCE196; /* Light Gold */
+  
+  /* Text & Glass */
+  --white: #FFFFFF;
+  --white-80: rgba(255,255,255,0.80);
+  --white-60: rgba(255,255,255,0.60);
+  --white-40: rgba(255,255,255,0.40);
+  --white-20: rgba(255,255,255,0.20);
+  --white-10: rgba(255,255,255,0.10);
+  --white-05: rgba(255,255,255,0.05);
+  
+  /* Glassmorphism Helpers */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-gold-border: rgba(212, 175, 55, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  --glass-blur: blur(12px);
+
+  /* Gradientes */
+  --grad-primary: linear-gradient(135deg, var(--gold-2) 0%, var(--gold-3) 40%, var(--gold-4) 100%);
+  --grad-text-gold: linear-gradient(90deg, var(--gold-3), var(--gold-4), var(--white));
+  --grad-bg-main: linear-gradient(180deg, var(--navy-dark) 0%, var(--bg-dark) 100%);
+  --grad-glow: radial-gradient(circle at 50% 50%, rgba(212,175,55,0.15) 0%, transparent 60%);
+
+  /* Tipografia */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Extras */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --section-pad: 120px 24px;
+}

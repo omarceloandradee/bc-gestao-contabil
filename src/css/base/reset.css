@@ -1,0 +1,42 @@
+/* ---- RESET & GLOBAL ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { 
+  scroll-behavior: smooth; 
+  font-size: 16px; 
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-darker);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: var(--white);
+}
+
+img { max-width: 100%; display: block; border-radius: 4px; }
+a { text-decoration: none !important; color: inherit; outline: none; }
+ul { list-style: none; }
+button { 
+  font-family: inherit; 
+  outline: none; 
+  border: none; 
+  background: transparent; 
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn-primary, .btn-secondary, .btn-gold, .btn-whatsapp-nav, .carousel-btn {
+  text-decoration: none !important;
+}

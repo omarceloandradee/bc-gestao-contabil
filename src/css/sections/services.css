@@ -1,0 +1,31 @@
+.relative-section { position: relative; z-index: 10; }
+
+.bg-grid-texture {
+  position: absolute; inset: 0; z-index: -1;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 100% 100% at 50% 0%, black 20%, transparent 80%);
+}
+
+.services-section { padding: var(--section-pad); background: var(--bg-dark); }
+.services-container { max-width: 1200px; margin: 0 auto; }
+
+/* Masonry via CSS Columns (Avançado) */
+.services-masonry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.services-masonry > *:nth-child(2) { transform: translateY(40px); }
+.services-masonry > *:nth-child(5) { transform: translateY(40px); }
+
+.service-card { padding: 40px 32px; text-align: left; }
+.service-icon { width: 50px; height: 50px; margin-bottom: 24px; }
+.svg-stroke { transition: stroke-dashoffset 1s ease; }
+.service-title { font-size: 1.4rem; font-weight: 600; margin-bottom: 12px; }
+.service-desc { font-size: 0.95rem; line-height: 1.7; color: var(--white-60); }

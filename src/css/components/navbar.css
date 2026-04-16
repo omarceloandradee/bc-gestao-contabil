@@ -1,0 +1,94 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 16px 24px;
+  transition: all 0.5s var(--ease-out);
+  background: transparent;
+}
+
+.navbar.scrolled {
+  padding: 10px 24px;
+  background: rgba(10, 17, 40, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo { flex-shrink: 0; }
+.logo-img { height: 42px; width: auto; object-fit: contain; filter: drop-shadow(0 0 8px rgba(255,255,255,0.1)); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white-80);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 2px;
+  background: var(--grad-primary);
+  border-radius: 2px;
+  transition: width 0.3s var(--ease-spring);
+}
+
+.nav-link:hover { color: var(--white); }
+.nav-link:hover::before, .nav-link.active::before { width: 100%; }
+.nav-link.active { color: var(--gold-4); text-shadow: 0 0 10px rgba(212,175,55,0.4); }
+
+.btn-whatsapp-nav {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--gold-3);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 10px 22px;
+  border-radius: 100px;
+  border: 1px solid var(--gold-2);
+  transition: all 0.3s ease;
+  position: relative; overflow: hidden;
+}
+
+.btn-whatsapp-nav:hover {
+  background: var(--gold-3);
+  color: var(--bg-darker);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.3);
+}
+
+/* Toggle Hamburger */
+.nav-toggle {
+  display: none;
+  flex-direction: column; gap: 6px;
+  width: 40px; height: 40px;
+  justify-content: center; align-items: center;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  width: 24px; height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s var(--ease-spring);
+}

@@ -1,0 +1,79 @@
+.btn-primary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  background: var(--grad-primary);
+  color: var(--bg-darker);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px 36px;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s var(--ease-spring);
+  box-shadow: 0 10px 30px rgba(184, 134, 11, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+  color: var(--bg-darker);
+}
+
+.btn-secondary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  background: rgba(255,255,255,0.03);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 15px 34px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.4s var(--ease-out);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  border-color: var(--gold-3);
+  color: var(--gold-4);
+  background: rgba(212, 175, 55, 0.05);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-weight: 600;
+  color: var(--gold-3);
+  padding: 16px 32px;
+  border-radius: 100px;
+  border: 1.5px solid var(--gold-2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn-gold:hover {
+  background: var(--grad-primary);
+  color: var(--bg-darker);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.3);
+}
+
+.btn-large { font-size: 1.1rem; padding: 20px 45px; }
+.btn-block { width: 100%; }
+
+/* Efeito Ripple / Shine buttons */
+.btn-shine {
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: skewX(-20deg);
+  transition: 0s;
+}
+
+button:hover .btn-shine, a:hover .btn-shine {
+  left: 200%;
+  transition: left 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
