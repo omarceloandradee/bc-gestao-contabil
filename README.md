@@ -23,7 +23,7 @@ bc-gestao-contabil/
 ├── package.json          # Metadados e scripts utilitários (lint/format)
 ├── README.md             # Esta documentação
 ├── index.html            # Ponto de entrada
-├── public/               # Assets públicos estáticos
+├── assets/               # Assets públicos estáticos
 │   └── img/
 │       └── logo1.png
 └── src/
