@@ -4,7 +4,8 @@
   "description": "BC Gestão Contábil - Landing Page Premium",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo 'no-build'",
     "lint": "eslint src/js/**/*.js",
     "format": "prettier --write \"src/**/*.{js,css,html}\""
   },
