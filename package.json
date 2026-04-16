@@ -1,23 +1,9 @@
 {
   "name": "bc-gestao-contabil",
   "version": "1.0.0",
+  "private": true,
   "description": "BC Gestão Contábil - Landing Page Premium",
-  "main": "src/js/app.js",
   "scripts": {
-    "dev": "npx serve .",
-    "build": "true",
-    "lint": "eslint src/js/**/*.js",
-    "format": "prettier --write \"src/**/*.{js,css,html}\""
-  },
-  "keywords": [
-    "contabilidade",
-    "landing-page",
-    "premium"
-  ],
-  "author": "Marcelo",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5"
+    "dev": "npx serve ."
   }
 }
